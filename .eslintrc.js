@@ -1,5 +1,15 @@
 module.exports = {
   extends: 'airbnb-base',
+  settings: {
+    'import/resolver': {
+      alias: {
+        map: [
+          ['@', './'],
+          ['#', './subModule/'],
+        ],
+      },
+    },
+  },
   rules: {
     strict: 0,
     'linebreak-style': 0,
